@@ -1,119 +1,16 @@
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<title>Online HTML Stripper. Remove HTML and formatting from text</title>
-	<meta name="description" content="Free online tool to strip HTML from any text. Remove all HTML and formatting from your text. StripHTML.com gives quick and easy way to transform formatted text" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-	<link rel="stylesheet" type="text/css"  href="styles.css">
-
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-	<link rel="canonical" href="https://www.striphtml.com/" />
-
-	<!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!--[if (gte IE 6)&(lte IE 8)]>
-	  	<script src="js/selectivizr.js"></script>
-	<![endif]-->
-
-	<script type="text/javascript">
-		(function(){
-			var bsa_optimize=document.createElement('script');
-			bsa_optimize.type='text/javascript';
-			bsa_optimize.async=true;
-			bsa_optimize.src='https://cdn4.buysellads.net/pub/striphtml.js?'+(new Date()-new Date()%600000);
-			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
-		})();
-	</script>
-
-</head>
-<body>
-	<!-- Header -->
-	<div id="header">
-
-		<!-- 960 Container -->
-		<div class="container">
-
-			<!-- Logo -->
-			<div class="four columns">
-					<a href="#"><h1 id="logo">Strip HTML - Remove HTML and formatting from your text</h1></a>
-			</div>
-
-		</div>
-	</div><!-- End Header -->
-
-	<!-- 960 Container -->
-	<div class="container">
-
-		<!-- Tagline -->
-		<div class="sixteen columns">
-			<br />
-
-			<div id="tagline">				
-
-				<div class="eight columns alpha">
-
-					<h2>Strip HTML and formatting from your text</h2>
-					<p>Paste content below, and hit the button</p>
-			
-					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				
-				</div>
-				
-				<div class="eight columns alpha">
-					<!-- StripHTML_S2S_Leaderboard_ROS_Pos1 -->
-					<div id="bsa-zone_1615580422946-1_123456" style="float:right"></div>
-				</div>
-
-
-			</div>
-		</div>
-		
-		<!-- Slider -->
-		<div class="sixteen columns">
-
-			<!-- Contact Form -->
-			<div class="contact_form">
-
-				 
-				<form action="/" id="page-contact" method="post">
-
-					<div>
-						<label for="textnonsense">Paste your HTML text here (maximum 20.000 characters):</label>
-						  <label>
-						  		<input type="checkbox" id="keep_line_breaks" name="keep_line_breaks" value="true" checked>Keep line breaks</label>
-
-						<div id="textagain" class="visible">
-							<a href="/">Clean some more text</a>
-						</div>
-						<textarea name="textnonsense" id="textnonsense" class="contact_textarea" maxlength="20000" lengthcut="true">
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
-	<title>Online HTML Stripper. Remove HTML and formatting from text</title>
-	<meta name="description" content="Free online tool to strip HTML from any text. Remove all HTML and formatting from your text. StripHTML.com gives quick and easy way to transform formatted text" />
+	<title>Count characters online. Paste text and get the number of chars - instant</title>
+	<meta name="description" content="Free online tool to count characters in a text. Simply paste or type your text to see the number of chars. This character counter works instand and is free for all" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -122,7 +19,20 @@
 
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-	<link rel="canonical" href="https://www.striphtml.com/" />
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+	window.onload = function() {
+  		document.getElementById("textbox").focus();
+	};
+		
+	function charcountupdate(str) {
+		var lng = str.length;
+		document.getElementById("charcount").innerHTML = lng + ' characters';
+	}
+	</script>
+
 
 	<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -132,15 +42,15 @@
 	  	<script src="js/selectivizr.js"></script>
 	<![endif]-->
 
-	<script type="text/javascript">
-		(function(){
-			var bsa_optimize=document.createElement('script');
-			bsa_optimize.type='text/javascript';
-			bsa_optimize.async=true;
-			bsa_optimize.src='https://cdn4.buysellads.net/pub/striphtml.js?'+(new Date()-new Date()%600000);
-			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
-		})();
-	</script>
+<script type="text/javascript">
+	(function(){
+		var bsa_optimize=document.createElement('script');
+		bsa_optimize.type='text/javascript';
+		bsa_optimize.async=true;
+		bsa_optimize.src='https://cdn4.buysellads.net/pub/striphtml.js?'+(new Date()-new Date()%600000);
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+	})();
+</script>
 
 </head>
 <body>
@@ -152,7 +62,7 @@
 
 			<!-- Logo -->
 			<div class="four columns">
-					<a href="#"><h1 id="logo">Strip HTML - Remove HTML and formatting from your text</h1></a>
+					<a href="/"><span id="logo"></span></a>
 			</div>
 
 		</div>
@@ -162,22 +72,23 @@
 	<div class="container">
 
 		<!-- Tagline -->
-		<div class="sixteen columns">
+		<div class="sixteen columns">		
 			<br />
 
-			<div id="tagline">				
-
+			<div id="tagline">
+				
 				<div class="eight columns alpha">
+					<h1>Instant online character count</h1>
 
-					<h2>Strip HTML and formatting from your text</h2>
-					<p>Paste content below, and hit the button</p>
-			
+					<p>Paste your text below to get the char count</p>
+
+					
 					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				
+					<br /><br />
 				</div>
 				
-				<div class="eight columns alpha">
+				<div class="eight columns alpha eightright">
 					<!-- StripHTML_S2S_Leaderboard_ROS_Pos1 -->
 					<div id="bsa-zone_1615580422946-1_123456" style="float:right"></div>
 				</div>
@@ -192,27 +103,9 @@
 			<!-- Contact Form -->
 			<div class="contact_form">
 
-				 
-				<form action="/" id="page-contact" method="post">
+				<textarea placeholder="Paste or type here to count chars" style="width: 100%; height: 300px;padding:15px" id="textbox" onkeyup="charcountupdate(this.value)"></textarea>
+				<h4 style="text-align: center">The text contains <span id=charcount> 0 characters</span></h4>
 
-					<div>
-						<label for="textnonsense">Paste your HTML text here (maximum 20.000 characters):</label>
-						  <label>
-						  		<input type="checkbox" id="keep_line_breaks" name="keep_line_breaks" value="true" checked>Keep line breaks</label>
-
-						<div id="textagain" class="">
-							<a href="/">Clean some more text</a>
-						</div>
-						<textarea name="textnonsense" id="textnonsense" class="contact_textarea" maxlength="20000" lengthcut="true"></textarea>
-					</div>
-
-					<div class="send_button">
-						<input class="contact_submit" type="submit" name="contact_send" id="contact_send" value="STRIP HTML"/>
-						<input type="hidden" name="action" value="send"/>
-					</div>
-				</form>
-
-	            						
 				<!-- StripHTML_S2S_Leaderboard_ROS_Pos2 -->
 				<div id="bsa-zone_1615580427806-2_123456"></div>
 
@@ -226,9 +119,9 @@
 				<div class="one-third column">
 					<div class="feature">
 						<div class="feature-description">
-						<h3>Why use StripHTML for cleaning up text?</h3>
-						<p>StripHTML.com gives you a quick, easy and satisfying way to transform your ugly formatted and/or HTMLified text into a clean and pretty text for you to enjoy.</p>
-						<p>The service can be helpful for people who want to save a massive amount of time cleaning up messy text packed with HTML tags and ugly formatting.</p><p>If you find stripHTML.com helpful, be a pal and share the site in your social networks</p>
+						<h3>Why use this online character counter?</h3>
+						<p>Because it gives you you a quick and easy way to instantly get the amount of characters, that you type og paste into the box. The resulting amount is yours to enjoy. You can copy the result and use it anyway you want.</p>
+						<p>I made this service because I know people often need to create and work with text under different restrictions - often with a maximum amount of characters or numbers. If you find the counter here helpful, I would greatly appreciate if you'd share this page with your friends online. Let's make a difference together.</p>
 						</div>
 					</div>
 				</div>
@@ -237,9 +130,9 @@
 				<div class="one-third column">
 					<div class="feature">
 						<div class="feature-description">
-						<h3>How does it remove the HTML?</h3>
-						<p>StripHTML uses a series of PHP functions (such as <a href="//php.net/manual/en/function.strip-tags.php">strip_tags</a>) and some custom made code to remove HTML and ugly formatting. All you have to do is to paste the text, click the button - and voila!</p>
-						<p>Since different applications and WYSIWYG-editors use all sorts of different markup and custom formatting, the HTML stripper function might not be 100% bulletproof - but it should still be very helpful.</p>
+						<h3>How does it do the counting?</h3>
+						<p>It is actually very simple, and it only uses a few lines of JavaScript to count the text in the box. So the JavaScript-function is called every time you add a new character or number, to make the result update live. Easy, right?</p>
+						<p>During my daily work I often need to create small bits and pieces of text; A title no longer than 80 characters, a description no longer than 180 characters and so on. And I know I am not the only one who needs a tool, that quickly can count chars, so of course I build one. I use it myself and I hope you will too!</p>
 						</div>
 					</div>
 				</div>
@@ -248,29 +141,27 @@
 				<div class="one-third column">
 					<div class="feature">
 						<div class="feature-description">
-						<h3>What's the catch?</h3>
-						<p>Nothing at all. It's totally free to strip HTML from your text using this service. I hope stripHTML will make the everyday easier for people working with web, text, and HTML.</p>
-
-						<p>I use a large variety of similar services, but couldn't find a decent HTML stripper - so I made one myself. Oh - I have placed a couple of ads on the site, hoping to make a dollar every now and then.</p>
+						<h3>What's the catch, you might think?</h3>
+						<p>I promise you, there is no strings attached if you decide to use this tool. It is totally free, and without limitations. So count away! I simply hope the counter will make your day just a little bit easier and more effective, just as it did mine. Maybe I am biased, but if I was you, I'd bookmark this page right away.</p>
+						<p>Thank you for stopping by, I hope the online char counter did its job, and that you'd like to return again in the future. Meanwhile I might launch even more tools, that can make everyday life easier for people working with text, online and such.</p>
 						</div>
 					</div>
 				</div>
 				<!-- End Features -->
 
 			<div class="sixteen columns" id="divider"></div>
-			<p>New tool - try the <a href="https://www.striphtml.com/count-characters.php">Online character counter</a></p><br /><br />
+			<p>Also check out <a href="https://www.striphtml.com/">this tool to strip HTML or formatting</a> from your text</p><br /><br />
 
 	</div>
 	<!-- End 960 Container -->
-
-
+			
 		<!--  Footer - Copyright-->
 		<div id="footer_bottom">
 			<!-- 960 Container -->
 			<div class="container">
 
 				<div class="eight columns">
-					<div class="copyright">Strip HTML lets you remove HTML and formatting from your text.</div>
+					<div class="copyright">Strip HTML: Online tools to make your day easier</div>
 				</div>
 
 				<div class="eight columns">
@@ -278,278 +169,6 @@
 
 			</div><!-- End 960 Container -->
 		</div>
-
-
-</body>
-
-</html></textarea>
-					</div>
-
-					<div class="send_button hidden">
-						<input class="contact_submit" type="submit" name="contact_send" id="contact_send" value="STRIP HTML"/>
-						<input type="hidden" name="action" value="send"/>
-					</div>
-				</form>
-
-	            <div id='cleantext'><br />
-<br />
-<br />
-<br />
-<br />
- <br />
-<br />
-<br />
-	<br />
-	Online HTML Stripper. Remove HTML and formatting from text<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-<br />
-	<br />
-		(function(){<br />
-			var bsa_optimize=document.createElement(&#39;script&#39;);<br />
-			bsa_optimize.type=&#39;text/javascript&#39;;<br />
-			bsa_optimize.async=true;<br />
-			bsa_optimize.src=&#39;https://cdn4.buysellads.net/pub/striphtml.js?&#39;+(new Date()-new Date()%600000);<br />
-			(document.getElementsByTagName(&#39;head&#39;)[0]||document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bsa_optimize);<br />
-		})();<br />
-	<br />
-<br />
-<br />
-<br />
-	<br />
-	<br />
-<br />
-		<br />
-		<br />
-<br />
-			<br />
-			<br />
-					Strip HTML - Remove HTML and formatting from your text<br />
-			<br />
-<br />
-		<br />
-	<br />
-<br />
-	<br />
-	<br />
-<br />
-		<br />
-		<br />
-			<br />
-<br />
-							<br />
-<br />
-				<br />
-<br />
-					Strip HTML and formatting from your text<br />
-					Paste content below, and hit the button<br />
-			<br />
-					Tweet<br />
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&#34;//platform.twitter.com/widgets.js&#34;;fjs.parentNode.insertBefore(js,fjs);}}(document,&#34;script&#34;,&#34;twitter-wjs&#34;);<br />
-				<br />
-				<br />
-				<br />
-				<br />
-					<br />
-					<br />
-				<br />
-<br />
-<br />
-			<br />
-		<br />
-		<br />
-		<br />
-		<br />
-<br />
-			<br />
-			<br />
-<br />
-				 <br />
-				<br />
-<br />
-					<br />
-						Paste your HTML text here (maximum 20.000 characters):<br />
-						  <br />
-						  		Keep line breaks<br />
-<br />
-						<br />
-							Clean some more text<br />
-						<br />
-						<br />
-					<br />
-<br />
-					<br />
-						<br />
-						<br />
-					<br />
-				<br />
-<br />
-	            						<br />
-				<br />
-				<br />
-<br />
-			<br />
-		<br />
-		<br />
-<br />
-			<br />
-<br />
-				<br />
-				<br />
-					<br />
-						<br />
-						Why use StripHTML for cleaning up text?<br />
-						StripHTML.com gives you a quick, easy and satisfying way to transform your ugly formatted and/or HTMLified text into a clean and pretty text for you to enjoy.<br />
-						The service can be helpful for people who want to save a massive amount of time cleaning up messy text packed with HTML tags and ugly formatting.If you find stripHTML.com helpful, be a pal and share the site in your social networks<br />
-						<br />
-					<br />
-				<br />
-<br />
-				<br />
-				<br />
-					<br />
-						<br />
-						How does it remove the HTML?<br />
-						StripHTML uses a series of PHP functions (such as strip_tags) and some custom made code to remove HTML and ugly formatting. All you have to do is to paste the text, click the button - and voila!<br />
-						Since different applications and WYSIWYG-editors use all sorts of different markup and custom formatting, the HTML stripper function might not be 100% bulletproof - but it should still be very helpful.<br />
-						<br />
-					<br />
-				<br />
-<br />
-				<br />
-				<br />
-					<br />
-						<br />
-						What&#39;s the catch?<br />
-						Nothing at all. It&#39;s totally free to strip HTML from your text using this service. I hope stripHTML will make the everyday easier for people working with web, text, and HTML.<br />
-<br />
-						I use a large variety of similar services, but couldn&#39;t find a decent HTML stripper - so I made one myself. Oh - I have placed a couple of ads on the site, hoping to make a dollar every now and then.<br />
-						<br />
-					<br />
-				<br />
-				<br />
-<br />
-			<br />
-			New tool - try the Online character counter<br />
-<br />
-	<br />
-	<br />
-<br />
-<br />
-		<br />
-		<br />
-			<br />
-			<br />
-<br />
-				<br />
-					Strip HTML lets you remove HTML and formatting from your text.<br />
-				<br />
-<br />
-				<br />
-				<br />
-<br />
-			<br />
-		<br />
-<br />
-<br />
-<br />
-<br />
-</div><br /><button id='copy-btn'>Copy clean text</button>
-							<script>
-							    var copyBtn = document.getElementById("copy-btn");
-							    var cleantext = document.getElementById("cleantext");
-							    copyBtn.addEventListener("click", function() {
-							        var text = cleantext.textContent;
-							        navigator.clipboard.writeText(text).then(function() {
-												copyBtn.textContent = "Copied";
-							        }, function(err) {
-							            console.error('Failed to copy text: ', err);
-							        });
-							    });
-							</script>
-
-
-												
-				<!-- StripHTML_S2S_Leaderboard_ROS_Pos2 -->
-				<div id="bsa-zone_1615580427806-2_123456"></div>
-
-			</div>
-		</div>
-		
-
-			<div class="sixteen columns" id="divider"></div>
-
-				<!-- 1/3 Columns -->
-				<div class="one-third column">
-					<div class="feature">
-						<div class="feature-description">
-						<h3>Why use StripHTML for cleaning up text?</h3>
-						<p>StripHTML.com gives you a quick, easy and satisfying way to transform your ugly formatted and/or HTMLified text into a clean and pretty text for you to enjoy.</p>
-						<p>The service can be helpful for people who want to save a massive amount of time cleaning up messy text packed with HTML tags and ugly formatting.</p><p>If you find stripHTML.com helpful, be a pal and share the site in your social networks</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- 1/3 Columns -->
-				<div class="one-third column">
-					<div class="feature">
-						<div class="feature-description">
-						<h3>How does it remove the HTML?</h3>
-						<p>StripHTML uses a series of PHP functions (such as <a href="//php.net/manual/en/function.strip-tags.php">strip_tags</a>) and some custom made code to remove HTML and ugly formatting. All you have to do is to paste the text, click the button - and voila!</p>
-						<p>Since different applications and WYSIWYG-editors use all sorts of different markup and custom formatting, the HTML stripper function might not be 100% bulletproof - but it should still be very helpful.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- 1/3 Columns -->
-				<div class="one-third column">
-					<div class="feature">
-						<div class="feature-description">
-						<h3>What's the catch?</h3>
-						<p>Nothing at all. It's totally free to strip HTML from your text using this service. I hope stripHTML will make the everyday easier for people working with web, text, and HTML.</p>
-
-						<p>I use a large variety of similar services, but couldn't find a decent HTML stripper - so I made one myself. Oh - I have placed a couple of ads on the site, hoping to make a dollar every now and then.</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Features -->
-
-			<div class="sixteen columns" id="divider"></div>
-			<p>New tool - try the <a href="https://www.striphtml.com/count-characters.php">Online character counter</a></p><br /><br />
-
-	</div>
-	<!-- End 960 Container -->
-
-
-		<!--  Footer - Copyright-->
-		<div id="footer_bottom">
-			<!-- 960 Container -->
-			<div class="container">
-
-				<div class="eight columns">
-					<div class="copyright">Strip HTML lets you remove HTML and formatting from your text.</div>
-				</div>
-
-				<div class="eight columns">
-				</div>
-
-			</div><!-- End 960 Container -->
-		</div>
-
 
 </body>
 
